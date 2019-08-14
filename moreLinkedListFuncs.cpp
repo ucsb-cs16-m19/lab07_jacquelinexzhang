@@ -44,6 +44,7 @@ void addIntToStartOfList(LinkedList *list, int value) {
   assert(list!=NULL); // if list is NULL, we can do nothing.
   Node *p = new Node;
   p -> data = value;
+  p -> next = NULL;
   if (list->head == NULL){
     list -> head = p;
     list -> tail = p;
